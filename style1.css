@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ////// nav bar styles //// */
+
+li,
+a,
+button {
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  padding-right: 40px;
+}
+
+#navbar {
+  position: sticky;
+  top: 0px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background: #101f27;
+}
+
+#logo {
+  cursor: pointer;
+  padding-left: 80px;
+}
+
+.nav-links1 {
+  list-style: none;
+}
+
+.nav-links1 li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links1 li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links1 li a:hover {
+  color: turquoise;
+}
+
+button {
+  padding: 9px 25px;
+  background: #c31f1f;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  width: 137px;
+  height: 43px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+/* /////////////////////////////////////////////////// end navbar//// */
+
+/* ////// landing page/////// */
+.landing {
+  background: linear-gradient(
+      180deg,
+      rgba(38, 50, 56, 0.1) 69.57%,
+      rgba(255, 255, 255, 0.2) 100%
+    ),
+    #0d1d25;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.contentbox {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.codeimg {
+  position: relative;
+  width: 348px;
+  height: 200px;
+  left: 114px;
+  top: 150px;
+}
+
+.flower {
+  position: relative;
+  width: 451px;
+  height: 390px;
+  left: 92px;
+  top: 110px;
+}
+
+.head1 {
+  color: white;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  position: relative;
+  top: 160px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.15em;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 29px;
+  padding-top: 80px;
+  padding-right: 160px;
+}
+
+.drop-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  cursor: pointer;
+  position: relative;
+  width: 407px;
+  height: 63px;
+  background: #c41f1f;
+  border-radius: 30px;
+  top: 90px;
+}
+
+.drop-zone__prompt {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+
+.btnimg {
+  bottom: 175px;
+  left: 130px;
+  position: relative;
+  height: 110px;
+  width: 147px;
+  background: transparent;
+  text-align: center;
+}
+
+.btnimg:hover {
+  background: url(./images/logo1.png);
+  width: 130px;
+  height: 110px;
+  background-size: cover;
+  color: transparent;
+}
+
+/* ////////// services /////// */
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 82.29%,
+      rgba(38, 45, 56, 0.47) 100%
+    ),
+    #ffffff;
+  padding-bottom: 40px;
+}
+
+.info {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.icons {
+  padding-left: 100px;
+}
+
+.pricechecker,
+.avail,
+.code1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  width: 503px;
+}
+
+.infopic {
+  width: 524px;
+  height: 499px;
+  position: relative;
+  padding-top: 190px;
+  padding-left: 90px;
+}
+
+/* ///////////////////////////////////////// end of services//// */
+/* /////////// pricing/////// */
+.pricing {
+  display: grid;
+  grid-template-rows: 200px 516px;
+  background: linear-gradient(
+      178.05deg,
+      rgba(38, 50, 56, 0) 66.92%,
+      rgba(255, 255, 255, 0.37) 100.34%
+    ),
+    #101f27;
+  height: 100vh;
+  font-family: "Mulish", sans-serif;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 268px 268px 268px 268px;
+}
+
+.Newbie,
+.Beginner,
+.Intermediate,
+.Expert {
+  border: 1px solid #6ba9c3;
+  background: white;
+  height: 516px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  left: 180px;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 41px;
+  padding-top: 60px;
+  color: white;
+  text-align: center;
+}
+
+.ft {
+  color: #c41f1f;
+  font-size: 20px;
+  padding-bottom: 90px;
+}
+
+.bg,
+.it,
+.ex {
+  color: black;
+  padding-bottom: 80px;
+}
+
+span {
+  font-size: 10px;
+}
+
+.pricefeatures {
+  font-weight: lighter;
+  padding-left: 20px;
+  position: relative;
+  font-size: 15px;
+  right: 130px;
+  top: 100px;
+}
+
+/* //////// Adding animations///////// */
+
+@keyframes shakerobot {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-40px) translateX(-20px);
+  }
+  20% {
+    transform: translateX(0px);
+  }
+  30% {
+    transform: translateY(-40px) translateX(20px);
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateY(-40px) translateX(-20px);
+  }
+  60% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  70% {
+    transform: translateY(-40px) translateX(20px);
+  }
+
+  80% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  90% {
+    transform: translateY(-40px) translateX(-20px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
